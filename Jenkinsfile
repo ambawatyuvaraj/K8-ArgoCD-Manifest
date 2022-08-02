@@ -1,4 +1,4 @@
-node(label: 'updatemanifest'){
+node{
     stage(name: 'clone repo'){
         checkout scm
         }
