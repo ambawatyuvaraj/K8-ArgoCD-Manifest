@@ -18,7 +18,7 @@ spec:
         app: k8-argocd
     spec:
       containers:
-      - image: ambawatyuvaraj/argocd:7
+      - image: ambawatyuvaraj/argocd:latest
         name: k8-argocd
         resources: {}
 status: {}
