@@ -10,7 +10,7 @@ node{
                         sh "git config user.email yuvrajpatel008@outlook.com"
                         sh "git config user.name Ambawat Yuvaraj"
                        
-                        sh "cat deployment.yaml"
+                        sh "cat Deployment.yaml"
                         sh "sed -i 's+raj80dockerid/test.*+raj80dockerid/test:${DOCKERTAG}+g' Deployment.yaml"
                         sh "cat Deployment.yaml"
                         sh "git add ."
