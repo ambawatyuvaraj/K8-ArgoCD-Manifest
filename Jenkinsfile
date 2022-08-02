@@ -9,9 +9,9 @@ node{
                         sh """
                           git config user.email yuvrajpael008@outlook.com"
                           git config user.name Ambawat Yuvaraj"
-                          cat deployment.yaml"
+                          cat Deployment.yaml"
                           sed -i 's+ambawatyuvaraj/argocd.*+ambawatyuvaraj/argocd:${DOCKERTAG}+g' Deployment.yaml"
-                          cat deployment.yaml"
+                          cat Deployment.yaml"
                           git add ."
                           git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"""
                           withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
